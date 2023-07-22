@@ -1,0 +1,42 @@
+Date : 2023-07-22 08:14:21
+Directory : f:\do_an\shop-back-end\routes
+Total : 15 files,  1198 codes, 122 comments, 141 blanks, all 1461 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         15 |      1,198 |        122 |        141 |      1,461 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                              |         15 |      1,198 |        122 |        141 |      1,461 |
+| . (Files)                                      |          8 |      1,359 |        124 |        161 |      1,644 |
+| ..                                             |          7 |       -161 |         -2 |        -20 |       -183 |
+| ..\models                                      |          7 |       -161 |         -2 |        -20 |       -183 |
++------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                       | language   | code       | comment    | blank      | total      |
++------------------------------------------------+------------+------------+------------+------------+------------+
+| f:\do_an\shop-back-end\models\CategoryInfo.js  | JavaScript |        -14 |         -2 |         -3 |        -19 |
+| f:\do_an\shop-back-end\models\ImportProduct.js | JavaScript |        -11 |          0 |         -3 |        -14 |
+| f:\do_an\shop-back-end\models\Order.js         | JavaScript |        -33 |          0 |         -4 |        -37 |
+| f:\do_an\shop-back-end\models\Product.js       | JavaScript |        -37 |          0 |         -3 |        -40 |
+| f:\do_an\shop-back-end\models\ReviewSchema.js  | JavaScript |        -15 |          0 |         -2 |        -17 |
+| f:\do_an\shop-back-end\models\SoldItem.js      | JavaScript |        -16 |          0 |         -2 |        -18 |
+| f:\do_an\shop-back-end\models\User.js          | JavaScript |        -35 |          0 |         -3 |        -38 |
+| f:\do_an\shop-back-end\routes\auth.js          | JavaScript |        123 |          5 |         21 |        149 |
+| f:\do_an\shop-back-end\routes\category.js      | JavaScript |         37 |          0 |          7 |         44 |
+| f:\do_an\shop-back-end\routes\order.js         | JavaScript |        602 |         67 |         61 |        730 |
+| f:\do_an\shop-back-end\routes\product.js       | JavaScript |        280 |          8 |         32 |        320 |
+| f:\do_an\shop-back-end\routes\recommend.js     | JavaScript |         51 |          0 |          9 |         60 |
+| f:\do_an\shop-back-end\routes\review.js        | JavaScript |         17 |          0 |          4 |         21 |
+| f:\do_an\shop-back-end\routes\user.js          | JavaScript |        169 |         41 |         20 |        230 |
+| f:\do_an\shop-back-end\routes\verifyToken.js   | JavaScript |         80 |          3 |          7 |         90 |
+| Total                                          |            |      1,198 |        122 |        141 |      1,461 |
++------------------------------------------------+------------+------------+------------+------------+------------+

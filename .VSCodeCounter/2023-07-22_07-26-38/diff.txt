@@ -1,0 +1,60 @@
+Date : 2023-07-22 07:26:38
+Directory : f:\do_an\shop-admin\src\app\common
+Total : 26 files,  506 codes, -11 comments, 67 blanks, all 562 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          5 |        386 |          1 |         49 |        436 |
+| HTML       |          5 |         94 |          4 |          7 |        105 |
+| TypeScript |         16 |         26 |        -16 |         11 |         21 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         26 |        506 |        -11 |         67 |        562 |
+| ..                                                                                              |          6 |       -202 |        -16 |        -47 |       -265 |
+| ..\service                                                                                      |          6 |       -202 |        -16 |        -47 |       -265 |
+| pop-up                                                                                          |         20 |        708 |          5 |        114 |        827 |
+| pop-up\add-product-popup                                                                        |          4 |        106 |          0 |         19 |        125 |
+| pop-up\error-popup                                                                              |          4 |        147 |          4 |         26 |        177 |
+| pop-up\loading-popup                                                                            |          4 |        126 |          0 |         13 |        139 |
+| pop-up\reason-cancel                                                                            |          4 |        161 |          0 |         28 |        189 |
+| pop-up\success-popup                                                                            |          4 |        168 |          1 |         28 |        197 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| f:\do_an\shop-admin\src\app\common\pop-up\add-product-popup\add-product-popup.component.css     | CSS        |         46 |          0 |          7 |         53 |
+| f:\do_an\shop-admin\src\app\common\pop-up\add-product-popup\add-product-popup.component.html    | HTML       |         15 |          0 |          1 |         16 |
+| f:\do_an\shop-admin\src\app\common\pop-up\add-product-popup\add-product-popup.component.spec.ts | TypeScript |         18 |          0 |          6 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\add-product-popup\add-product-popup.component.ts      | TypeScript |         27 |          0 |          5 |         32 |
+| f:\do_an\shop-admin\src\app\common\pop-up\error-popup\error-popup.component.css                 | CSS        |         90 |          0 |         14 |        104 |
+| f:\do_an\shop-admin\src\app\common\pop-up\error-popup\error-popup.component.html                | HTML       |         19 |          4 |          2 |         25 |
+| f:\do_an\shop-admin\src\app\common\pop-up\error-popup\error-popup.component.spec.ts             | TypeScript |         18 |          0 |          6 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\error-popup\error-popup.component.ts                  | TypeScript |         20 |          0 |          4 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\loading-popup\loading-popup.component.css             | CSS        |         96 |          0 |          4 |        100 |
+| f:\do_an\shop-admin\src\app\common\pop-up\loading-popup\loading-popup.component.html            | HTML       |          4 |          0 |          0 |          4 |
+| f:\do_an\shop-admin\src\app\common\pop-up\loading-popup\loading-popup.component.spec.ts         | TypeScript |         18 |          0 |          6 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\loading-popup\loading-popup.component.ts              | TypeScript |          8 |          0 |          3 |         11 |
+| f:\do_an\shop-admin\src\app\common\pop-up\reason-cancel\reason-cancel.component.css             | CSS        |         51 |          0 |          8 |         59 |
+| f:\do_an\shop-admin\src\app\common\pop-up\reason-cancel\reason-cancel.component.html            | HTML       |         37 |          0 |          3 |         40 |
+| f:\do_an\shop-admin\src\app\common\pop-up\reason-cancel\reason-cancel.component.spec.ts         | TypeScript |         18 |          0 |          6 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\reason-cancel\reason-cancel.component.ts              | TypeScript |         55 |          0 |         11 |         66 |
+| f:\do_an\shop-admin\src\app\common\pop-up\success-popup\success-popup.component.css             | CSS        |        103 |          1 |         16 |        120 |
+| f:\do_an\shop-admin\src\app\common\pop-up\success-popup\success-popup.component.html            | HTML       |         19 |          0 |          1 |         20 |
+| f:\do_an\shop-admin\src\app\common\pop-up\success-popup\success-popup.component.spec.ts         | TypeScript |         18 |          0 |          6 |         24 |
+| f:\do_an\shop-admin\src\app\common\pop-up\success-popup\success-popup.component.ts              | TypeScript |         28 |          0 |          5 |         33 |
+| f:\do_an\shop-admin\src\app\service\api.service.ts                                              | TypeScript |        -78 |         -7 |        -25 |       -110 |
+| f:\do_an\shop-admin\src\app\service\auth.service.ts                                             | TypeScript |        -59 |         -3 |         -8 |        -70 |
+| f:\do_an\shop-admin\src\app\service\error.service.ts                                            | TypeScript |        -23 |         -6 |         -6 |        -35 |
+| f:\do_an\shop-admin\src\app\service\http.service.ts                                             | TypeScript |        -19 |          0 |         -3 |        -22 |
+| f:\do_an\shop-admin\src\app\service\loading.service.ts                                          | TypeScript |        -20 |          0 |         -4 |        -24 |
+| f:\do_an\shop-admin\src\app\service\model.service.ts                                            | TypeScript |         -3 |          0 |         -1 |         -4 |
+| Total                                                                                           |            |        506 |        -11 |         67 |        562 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
