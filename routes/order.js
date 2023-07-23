@@ -19,26 +19,9 @@ router.post('/create', verifyTokenAndAuthorization, async (req, res) => {
     const products = req.body.products;
     try {
         if (products.length > 0) {
-            // products.forEach(async (product) => {
-            //     const oldProduct = await Product.findById(product.productId);
-
-            //     if (oldProduct) {
-            //         const newInStock = oldProduct.inStock - product.quantity;
-
-            //         await Product.findByIdAndUpdate(
-            //             product.productId,
-            //             {
-            //                 $set: {
-            //                     inStock: newInStock,
-            //                 },
-            //             },
-            //             { new: true },
-            //         );
-            //     }
-            // });
             const savedOrder = await newOrder.save();
             const newUser = await User.findByIdAndUpdate(
-                userId,
+                req.body.userId,
                 { $inc: { 'orderInfo.createOrderCount': 1 } }, // Sử dụng toán tử $inc để tăng giá trị của createOrderCount lên 1
                 { new: true },
             );
