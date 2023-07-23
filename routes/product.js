@@ -215,7 +215,7 @@ router.post('/search', async (req, res) => {
                 $and: [
                     {
                         ...(cat && cat.length > 0 && { categories: { $in: cat } }),
-                        ...(reqBrand && { brand: reqBrand }),
+                        ...(reqBrand && reqBrand.length > 0 && { brand: reqBrand }),
                         ...(stock === 'in' && { inStock: { $ne: 0 } }),
                         ...(stock === 'out' && { inStock: 0 }),
                         ...(priceFrom && { price: { $gte: priceFrom } }),
@@ -231,7 +231,7 @@ router.post('/search', async (req, res) => {
                 $and: [
                     {
                         ...(cat && cat.length > 0 && { categories: { $in: cat } }),
-                        ...(reqBrand && { brand: reqBrand }),
+                        ...(reqBrand && reqBrand.length > 0 && { brand: reqBrand }),
                         ...(stock === 'in' && { inStock: { $ne: 0 } }),
                         ...(stock === 'out' && { inStock: 0 }),
                         ...(priceFrom && { price: { $gte: priceFrom } }),
@@ -250,7 +250,7 @@ router.post('/search', async (req, res) => {
                         ...(cat && cat.length > 0 && { categories: { $in: cat } }),
                         ...(stock === 'in' && { inStock: { $ne: 0 } }),
                         ...(stock === 'out' && { inStock: 0 }),
-                        ...(reqBrand && { brand: reqBrand }),
+                        ...(reqBrand && reqBrand.length > 0 && { brand: reqBrand }),
                         ...(priceFrom && { price: { $gte: priceFrom } }),
                         ...(priceTo && { price: { $lte: priceTo } }),
                     },
@@ -263,7 +263,7 @@ router.post('/search', async (req, res) => {
                         ...(cat && cat.length > 0 && { categories: { $in: cat } }),
                         ...(stock === 'in' && { inStock: { $ne: 0 } }),
                         ...(stock === 'out' && { inStock: 0 }),
-                        ...(reqBrand && { brand: reqBrand }),
+                        ...(reqBrand && reqBrand.length > 0 && { brand: reqBrand }),
                         ...(priceFrom && { price: { $gte: priceFrom } }),
                         ...(priceTo && { price: { $lte: priceTo } }),
                     },
