@@ -261,9 +261,27 @@ router.post('/find/:id', verifyTokenAndAuthorization, async (req, res) => {
 // Get All
 router.post('/getorder', verifyTokenAndAdmin, async (req, res) => {
     const status = req.body.status;
+    const sort = req.body.sort;
+    let sortOptions;
+    switch (sort) {
+        case 'newest':
+            {
+                sortOptions = { createdAt: -1 };
+            }
+            break;
+        case 'oldest':
+            {
+                sortOptions = { createdAt: 1 };
+            }
+            break;
+        default: {
+            sortOptions = { createdAt: -1 };
+        }
+    }
+
     try {
         const orders = await Order.find({ status: { $in: [status] } })
-            .sort({ createdAt: 1 })
+            .sort(sortOptions)
             .populate({
                 path: 'products.productId',
                 select: '_id title inStock',
@@ -285,9 +303,27 @@ router.post('/getorderwithpaging', verifyTokenAndAdmin, async (req, res) => {
     const pageIndex = req.body.pageIndex;
     const itemsPerPage = req.body.itemsPerPage;
     const skipCount = (pageIndex - 1) * itemsPerPage;
+    const sort = req.body.sort;
+    let sortOptions;
+    switch (sort) {
+        case 'newest':
+            {
+                sortOptions = { createdAt: -1 };
+            }
+            break;
+        case 'oldest':
+            {
+                sortOptions = { createdAt: 1 };
+            }
+            break;
+        default: {
+            sortOptions = { createdAt: -1 };
+        }
+    }
+
     try {
         const orders = await Order.find({ status: { $in: status } })
-            .sort({ createdAt: -1 })
+            .sort(sortOptions)
             .populate({
                 path: 'products.productId',
                 select: '_id title inStock',
