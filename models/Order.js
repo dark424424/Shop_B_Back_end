@@ -28,6 +28,7 @@ const OrderSchema = new mongoose.Schema(
         isReview: { type: Boolean, default: false },
         evidence: { type: String },
         cancelReason: { type: String },
+        cancelType: { type: Number },
     },
     { timestamps: true },
 );

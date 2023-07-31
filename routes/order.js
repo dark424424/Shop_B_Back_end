@@ -72,6 +72,29 @@ router.post('/create', verifyTokenAndAuthorization, async (req, res) => {
 //     }
 // });
 
+// router.post('/updateordertest', async (req, res) => {
+//     try {
+//         const updateResult = await Order.updateMany(
+//             { status: 'Cancelled' },
+//             {
+//                 $set: {
+//                     cancelType: 0,
+//                 },
+//             },
+//         );
+//         res.status(200).json({
+//             resultCode: 0,
+//             message: 'Thành Công',
+//             updateResult,
+//         });
+//     } catch (e) {
+//         res.status(200).json({
+//             resultCode: 1,
+//             message: 'Thất Bại',
+//         });
+//     }
+// });
+
 router.post('/verify', verifyTokenAndAdmin, async (req, res) => {
     const id = req.body.id;
     try {
@@ -166,7 +189,7 @@ router.post('/cancel', verifyTokenAndAdmin, async (req, res) => {
         }
         const updatedOrder = await Order.findByIdAndUpdate(
             id,
-            { $set: { status: 'Cancelled', cancelReason: reason } },
+            { $set: { status: 'Cancelled', cancelReason: reason, cancelType: type } },
             { new: true },
         );
 
