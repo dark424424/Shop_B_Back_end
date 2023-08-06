@@ -18,7 +18,7 @@ router.post('/outofstock', verifyTokenAndAdmin, async (req, res) => {
                     const lastImportOrder = await ImportProduct.findById(product.lastImportId);
                     const timeDiff = (currentDate.getTime() - lastImportOrder.createdAt.getTime()) / (1000 * 3600 * 24);
                     const soldCount = lastImportOrder.newInStock - product.inStock;
-                    if (soldCount > 0 && timeDiff > 2) {
+                    if (soldCount > 0 && timeDiff > 1) {
                         const speedSell = soldCount / timeDiff;
 
                         const remainingDay = product.inStock / speedSell;
