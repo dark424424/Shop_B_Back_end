@@ -8,7 +8,7 @@ const ReviewSchema = require('../models/ReviewSchema');
 
 router.post('/outofstock', verifyTokenAndAdmin, async (req, res) => {
     const currentDate = new Date();
-    const thresholdDays = 7;
+    const thresholdDays = 15;
 
     try {
         const producList = await Product.find();
