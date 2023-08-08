@@ -69,11 +69,20 @@ router.post('/getproductdetailinit', async (req, res) => {
             });
 
         const totalComment = await ReviewSchema.countDocuments({ productIds: { $in: [id] } });
+
+        const similarList = await Product.find({
+            categories: product.categories,
+            _id: { $ne: req.body.id }, // Loại trừ các sản phẩm có id giống req.body.id
+        })
+            .sort({ soldCount: -1 })
+            .limit(4);
+
         res.status(200).json({
             resultCode: 0,
             product,
             commentList,
             totalComment,
+            similarList,
         });
     } catch (err) {
         res.status(200).json({
